@@ -21,4 +21,13 @@ Benefits:
 - Can use 'state' --- another react system
   - Easier to handle user input
 - Understands lifecycle events
+
   - Easier to do things when the app first starts
+
+## Rules of State:
+
+- !!!!State can only be updated using the function 'setState'
+- !! State must be initialized when a component is created
+- Only usable with class components, kinda....
+- 'State' is a JS object that contains data relevant to a component
+- Updating 'state' on a component causes the component to (almost) instantly rerender
