@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
+    // !V1
     // Immediately gets ran
-    constructor(props) {
-        super(props); // Referes to parent contructor function (React.Component)
+    // constructor(props) {
+    //     super(props); // Referes to parent contructor function (React.Component)
 
-        this.state = { lat: null, errorMsg: '' }; // init state obj
-    }
+    //     this.state = { lat: null, errorMsg: '' }; // init state obj
+    // }
+
+    // !V2
+    state = { lat: null, errorMsg: '' };
 
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
@@ -23,7 +28,7 @@ class App extends React.Component {
         }
 
         if (!this.state.errorMsg && this.state.lat) {
-            return <div>Latitude: {this.state.lat}</div>;
+            return <SeasonDisplay lat={this.state.lat} />;
         }
 
         return <div>Loading...</div>;
