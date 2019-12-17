@@ -1,9 +1,9 @@
 # JSX
 
-HTML <div style="background-color: red;></div>
-JSX <div style={{ backgroundColor: 'red' }}></div>
-∆ The first '{}' references a javascript variables inside JSX
-∆ The second '{{}}' indicates a javascript obj.
+- HTML <div style="background-color: red;></div>
+- JSX <div style={{ backgroundColor: 'red' }}></div>
+  - The first '{}' references a javascript variables inside JSX
+  - The second '{{}}' indicates a javascript obj.
 
 # Components
 
@@ -26,7 +26,7 @@ Benefits:
 
 ## Rules of State:
 
-∆ 'State' is a JS object that contains data relevant to a component
+- 'State' is a JS object that contains data relevant to a component
 
 - !!!!State can only be updated using the function 'setState'
 - !!! State must be initialized when a component is created
@@ -37,16 +37,20 @@ Benefits:
 # Component Lifecycle Methods
 
 - Constructor:
-  ∆ Good place to do one time setup
+
+  - Good place to do one time setup
 
 - render:
-  ∆ Avoid doing anything but return JSX
+
+  - Avoid doing anything but return JSX
 
 - componentDidMount:
-  ∆ Good place to do data loading
+
+  - Good place to do data loading
 
 - componentDidUpdate:
-  ∆ Good place to do more data-loading when state/props change
+
+  - Good place to do more data-loading when state/props change
 
 - componentWillUnmount:
-  ∆ Good place to do cleanup (especially for non-React stuff)
+  - Good place to do cleanup (especially for non-React stuff)
