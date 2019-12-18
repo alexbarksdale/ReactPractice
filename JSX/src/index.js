@@ -4,13 +4,8 @@ import ReactDOM from 'react-dom';
 
 // Create a react component
 const App = () => {
-<<<<<<< HEAD
     const labelText = 'Enter name:';
     const buttonText = { text: 'Click me' };
-=======
-    const buttonText = { text: 'Click me' };
-    const labelText = 'Enter name:';
->>>>>>> e825b504c3dc74f46141e457756b2fae4c0fc85f
 
     return (
         <div>
