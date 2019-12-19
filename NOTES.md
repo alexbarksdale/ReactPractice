@@ -67,4 +67,8 @@ return num \* 10; // returns a new array
 // React
 numbers.map((num) => {
 return <div> {num} </div>
-})
+});
+
+# React Refs (DOM)
+
+-   Create refs in the constructor, assign them to instance variables, then pass to a JSX element as a prop
