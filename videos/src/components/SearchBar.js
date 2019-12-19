@@ -1,6 +1,6 @@
 import React from 'react';
 
-class SearchBar extends React.Component {
+export default class SearchBar extends React.Component {
     state = { term: '' };
 
     onInputChange = (e) => {
@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
     onFormSubmit = (e) => {
         e.preventDefault();
 
-        this.props.onFormSubmit(this.state.term);
+        this.props.onTermSubmit(this.state.term);
     };
 
     render() {
@@ -30,5 +30,3 @@ class SearchBar extends React.Component {
         );
     }
 }
-
-export default SearchBar;
