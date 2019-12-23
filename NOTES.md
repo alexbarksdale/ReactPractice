@@ -64,6 +64,7 @@ const numbers = [0, 1, 2, 3, 4];
 numbers.map((num) => {
 return num \* 10; // returns a new array
 });
+
 // React
 numbers.map((num) => {
 return <div> {num} </div>
@@ -72,3 +73,14 @@ return <div> {num} </div>
 # React Refs (DOM)
 
 -   Create refs in the constructor, assign them to instance variables, then pass to a JSX element as a prop
+
+# Anchor Tags in React === BAD
+
+-   Using href sends a response with a .html file, the browser then dumps the old
+    HTML file it was showing which includes all of the React/Redux state data
+
+# Router
+
+-   BrowserRouter: Uses everything after the TLD | localhost:3000/example
+-   HashRouter: Uses everything after a # as the path | localhost:3000/#/example
+-   MemoryRouter: Doesn't use the URL to track navigation | localhost:3000/
