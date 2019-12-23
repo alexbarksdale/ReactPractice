@@ -37,6 +37,7 @@
     -   Action Creators can return action objects or return functions
     -   If an action oobj gets returned, it must have a type
     -   If an action obj gets returned, it can optionally have a 'payload'
+-   When you call an Action Creator within an Action Creator you need to dispatch the result of the action creator
 
 # Synchronous action creator
 
