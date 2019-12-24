@@ -22,7 +22,7 @@ class GoogleAuth extends Component {
     // @params: returns a boolean
     onAuthChange = (isSignedIn) => {
         if (isSignedIn) {
-            this.props.signIn();
+            this.props.signIn(this.auth.currentUser.get().getId());
         } else {
             this.props.signOut();
         }
@@ -47,7 +47,6 @@ class GoogleAuth extends Component {
                 </button>
             );
         } else {
-            console.log('hi');
             return (
                 <button className='ui green google button' onClick={this.onSignInClick}>
                     <i className='google icon' />
