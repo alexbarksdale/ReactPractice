@@ -5,7 +5,7 @@ export default class Field extends Component {
     static contextType = LanguageContext; // access the value in the context
 
     render() {
-        const text = this.context === 'english' ? 'Name' : 'Namm';
+        const text = this.context.language === 'english' ? 'Name' : 'Namm';
 
         return (
             <div className='ui field'>

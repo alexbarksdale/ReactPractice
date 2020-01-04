@@ -17,7 +17,9 @@ export default class Button extends Component {
                     <button className={`ui button ${color}`}>
                         <LanguageContext.Consumer>
                             {/* automatically invoked */}
-                            {(value) => (value === 'english' ? 'Submit' : 'Voorleggen')}
+                            {({ language }) =>
+                                language === 'english' ? 'Submit' : 'Voorleggen'
+                            }
                         </LanguageContext.Consumer>
                     </button>
                 )}
