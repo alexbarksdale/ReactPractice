@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
+import _ from 'lodash';
 import { fetchStream, editStream } from '../../actions';
 import StreamForm from './StreamForm';
 
@@ -9,7 +10,7 @@ class StreamEdit extends Component {
     }
 
     onSubmit = (formValues) => {
-        console.log('TCL: StreamEdit -> onSubmit -> formValues', formValues);
+        this.props.editStream(this.props.match.params.streamId, formValues);
     };
 
     render() {
@@ -20,7 +21,11 @@ class StreamEdit extends Component {
             <div>
                 <h3>Edit a Stream</h3>
                 <StreamForm
-                    initialValues={this.props.streamReducer}
+                    initialValues={_.pick(
+                        this.props.streamReducer,
+                        'title',
+                        'description'
+                    )}
                     onSubmit={this.onSubmit}
                 />
             </div>
