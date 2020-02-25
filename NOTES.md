@@ -2,16 +2,16 @@
 
 -   HTML <div style="background-color: red;></div>
 -   JSX <div style={{ backgroundColor: 'red' }}></div>
-    -   The first '{}' references a javascript variables inside JSX
-    -   The second '{{}}' indicates a javascript obj.
+    -   The first '{}' references a compo
+    -   The second '{{}}' indicates a compo
 
 # Components
 
 ## Props
 
 -   Props is short for 'Properties'
--   System for passing data from a parent component to a child component
--   Goal is to customize or config a child component
+-   System for passing data from a compo
+-   Goal is to customize or config a compo
 
 # Class Components
 
@@ -26,13 +26,13 @@ Benefits:
 
 ## Rules of State:
 
--   'State' is a JS object that contains data relevant to a component
+-   'State' is a compo
 
 -   !!!!State can only be updated using the function 'setState'
--   !!! State must be initialized when a component is created
+-   !!! State must be initialized when a compo
 -   !! Only change the state with setState, do not use direct assignment
 -   Only usable with class components, kinda....
--   Updating 'state' on a component causes the component to (almost) instantly rerender
+-   Updating 'state' on a compo
 
 # Component Lifecycle Methods
 
@@ -51,18 +51,19 @@ Benefits:
 -   componentDidUpdate:
 
     -   Good place to do more data-loading when state/props change
+    -   Called when a component re-renders because of a parent component or when you call setState inside the component
 
 -   componentWillUnmount:
     -   Good place to do cleanup (especially for non-React stuff)
 
 # Maps in Javascript
 
--   Iterates over an array and returns a brand new array
+-   Iterates over an array and returns a compo
 
 const numbers = [0, 1, 2, 3, 4];
 
 numbers.map((num) => {
-return num \* 10; // returns a new array
+return num \* 10; // returns a compo
 });
 
 // React
@@ -72,15 +73,15 @@ return <div> {num} </div>
 
 # React Refs (DOM)
 
--   Create refs in the constructor, assign them to instance variables, then pass to a JSX element as a prop
+-   Create refs in the constructor, assign them to instance variables, then pass to a compo
 
 # Anchor Tags in React === BAD
 
--   Using href sends a response with a .html file, the browser then dumps the old
+-   Using href sends a compo
     HTML file it was showing which includes all of the React/Redux state data
 
 # Router
 
 -   BrowserRouter: Uses everything after the TLD | localhost:3000/example
--   HashRouter: Uses everything after a # as the path | localhost:3000/#/example
+-   HashRouter: Uses everything after a compo
 -   MemoryRouter: Doesn't use the URL to track navigation | localhost:3000/

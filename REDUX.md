@@ -1,8 +1,10 @@
 # Redux Cycle Insurance Company Analogy
 
 -   Redux:
+
     -   [Action Creator] -> [Action] -> [Dispatch] -> [Reducers] -> [State]
--   Insurance:
+
+-   Insurance analogy:
 
     -   [Person dropping off the form] -> [the form] -> [form receiver] -> [departments] -> [compiled department data]
 
@@ -50,3 +52,8 @@
 # MISC
 
 -   'ownProps' in mapStateToProps is a reference to the props that will be passed into the component
+
+# Hooks with Redux
+
+-   useSelector() is like mapStateToProps
+-   useDispatch() is like mapDispatchToProps
