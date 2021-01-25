@@ -1,0 +1,23 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "mock": "json-server --watch ./db.json -p 4001 -d 3000"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0",
+    "json-server": "^0.16.3",
+    "next": "10.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}
